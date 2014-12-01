@@ -32,11 +32,12 @@ in motion and give the motor a chance to change movements without a harsh change
 The individual subroutines create movement forward, stop, backwards, left or right. A sample of code is shown below. 
 
 void turnRight(void)
-{
-	P1DIR &= ~BIT3;
-	P1REN |= BIT3;
 
-			P2DIR |= BIT2;							
+{
+		P1DIR &= ~BIT3;
+		P1REN |= BIT3;
+
+		P2DIR |= BIT2;							
 		    P2SEL |= BIT2;							
 
 		    P2DIR |= BIT4;							
